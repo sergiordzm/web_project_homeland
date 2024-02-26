@@ -31,9 +31,27 @@
 .places__second-description {
   font-weight: 400;
   line-height: 29.34px;
+  margin: 48px 0 0 0;
+}
+
+.places__second-descriptiontwo {
   margin: 0;
+  font-weight: 400;
+  line-height: 29.34px;
 }
 
 .places__second-descriptioncost {
   margin: 0;
+}
+
+.places__second-url {
+  margin: 0;
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+.places__second-website {
+  margin: 4px 0 0 0;
+  font-size: 18px;
+  text-decoration: underline;
 }
