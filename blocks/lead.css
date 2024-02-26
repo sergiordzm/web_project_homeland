@@ -28,3 +28,11 @@
   max-height: 615px;
   margin: 64px 148px 0 148px;
 }
+
+@media screen and (max-width: 768px) {
+  .lead__image {
+    max-width: 768px;
+    max-height: 862px;
+    margin: 64px 148px 0 148px;
+  }
+}
