@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 92px;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0 0 0 48px;
+  padding: 0;
+}
+
+.footer__link {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  margin: 0 48px 0 0;
+}
