@@ -1,25 +1,14 @@
-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 92px;
-  padding-bottom: 24px;
-}
-
-.footer__links {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  margin: 0 0 0 48px;
-  padding: 0;
-  gap: 9px;
-}
-
-.footer__link {
-  font-size: 16px;
-  text-decoration: none;
-}
-
 .footer__copyright {
   font-size: 14px;
-  margin: 0 48px 0 0;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: right;
+  margin: 92px 0 30px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__copyright {
+    margin: 64px 0 24px 0;
+  }
 }
