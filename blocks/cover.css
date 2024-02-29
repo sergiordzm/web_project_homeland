@@ -23,7 +23,7 @@
   height: 100%;
 }
 
-.cover__description {
+.cover__information {
   position: relative;
   z-index: 2;
   display: flex;
@@ -37,6 +37,7 @@
   font-size: 72px;
   font-weight: 900;
   line-height: 76px;
+  letter-spacing: 0em;
   text-align: center;
   margin: 0;
 }
