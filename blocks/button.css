@@ -1,0 +1,43 @@
+.button {
+  background: #0278fe;
+  color: white;
+  border-radius: 4px;
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  padding: 13px 20px 13px 20px;
+  border: 0;
+  text-decoration: none;
+  width: fit-content;
+  text-align: center;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #2a2c2f;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .button {
+    width: max-content;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: center;
+    width: fit-content;
+    display: block;
+    margin: auto auto 10px;
+  }
+
+  .button-ticket {
+    margin-bottom: 40px;
+  }
+}
