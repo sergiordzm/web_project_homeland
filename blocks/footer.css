@@ -2,6 +2,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-top: 92px;
+  padding-bottom: 24px;
 }
 
 .footer__links {
@@ -10,6 +11,7 @@ footer {
   list-style-type: none;
   margin: 0 0 0 48px;
   padding: 0;
+  gap: 9px;
 }
 
 .footer__link {

@@ -1,43 +1,101 @@
 .intro {
-  display: flex;
-  flex-direction: column;
-  margin: 92px 0 0 0;
-}
-
-.intro__title {
-  font-size: 54px;
-  font-weight: 900px;
-  line-height: 58px;
-  max-width: 690px;
-  margin: 0 0 0 148px;
-}
-
-.intro__subtitle {
-  font-size: 24px;
-  font-weight: 400px;
-  max-width: 690px;
-  margin: 40px 0 0 148px;
-  line-height: 34px;
+  max-width: 1017px;
+  width: 100%;
+  display: grid;
+  margin: auto;
 }
 
 .intro__content {
+  display: grid;
+  grid-template-columns: 1.4fr 1.5fr 1.2fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title title title"
+    "quote quote . "
+    " . author ."
+    "text text . ";
+  margin: auto;
+}
+
+.intro__title {
+  grid-area: title;
+
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 0em;
+}
+
+.intro__text-quote {
+  grid-area: quote;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  margin: auto;
+  grid-row: 2/7;
+}
+
+.intro__text-author {
+  grid-area: author;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: right;
+  margin: 0;
+  grid-row: 6/8;
+}
+
+.intro__text-information {
+  grid-area: text;
+
   font-size: 16px;
-  font-weight: 400px;
-  line-height: 26.08px;
-  max-width: 690px;
-  margin: 0 0 0 148px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  grid-row: 9;
 }
 
-.intro__data {
-  font-size: 12px;
-  line-height: 18px;
-  margin: 39px 0 0 148px;
-  list-style-type: none;
-  padding: 0;
-  max-width: 690px;
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .intro {
+    max-width: 720px;
+    width: 100%;
+  }
+
+  .intro__content {
+    display: block;
+  }
+
+  .intro__title {
+    margin-bottom: 0;
+  }
 }
 
-.intro__data-bold {
-  font-size: "Inter";
-  font-weight: 700;
+@media screen and (max-width: 767px) {
+  .intro {
+    max-width: 288px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro__content {
+    display: block;
+  }
+
+  .intro__title {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 9px;
+  }
+
+  .intro__text-information {
+    margin-bottom: 0;
+  }
 }

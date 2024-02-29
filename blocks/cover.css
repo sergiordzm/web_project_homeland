@@ -1,51 +1,107 @@
 .cover {
-  padding-top: 92px;
-}
-
-.cover__background {
-  background-image: url(/images/__background.png);
+  position: relative;
+  height: 740px;
   max-width: 1184px;
-  max-height: 740px;
-  margin: 0 0 0 48px;
-  background-size: cover;
+  width: 100%;
 }
 
 .cover__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.cover:hover .cover__overlay {
+  background-color: rgba(42, 44, 47, 0.8);
+}
+
+.cover__background {
+  position: absolute;
+  opacity: 70%;
+  width: 100%;
+  height: 100%;
+}
+
+.cover__description {
   position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.cover__overlay::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 1;
-}
-
-.cover__title,
-.cover__subtitle {
-  position: relative;
-  z-index: 2;
-  text-align: center;
+  height: 740px;
 }
 
 .cover__title {
   font-size: 72px;
   font-weight: 900;
   line-height: 76px;
-  margin: 283px 0 0 0;
+  text-align: center;
+  margin: 0;
 }
 
 .cover__subtitle {
   font-size: 18px;
+  font-weight: 400;
   line-height: 22px;
-  max-width: 320px;
-  margin: 37px 0 0 0;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 280px;
+  margin: 32px 0 0 0;
+}
+
+.cover__subtitle_address {
+  margin: 0;
+}
+
+.cover__subtitle_place {
+  margin: 0 0 32px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .cover {
+    position: relative;
+    max-width: 720px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cover {
+    position: relative;
+    max-height: 254px;
+    width: 321.26px;
+  }
+
+  .cover__information {
+    max-height: 254px;
+  }
+
+  .cover__title {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 46px;
+  }
+
+  .cover__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 16px 0 0 0;
+    padding: 0;
+  }
+
+  .cover__subtitle_address {
+    margin: 0;
+  }
+
+  .cover__subtitle_place {
+    margin: 0;
+  }
 }

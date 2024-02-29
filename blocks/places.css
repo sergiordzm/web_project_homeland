@@ -1,135 +1,20 @@
 .places {
-  display: flex;
-  margin: 92px 148px 0 148px;
-  flex-direction: column;
-  gap: 80px 0px;
-}
-
-.places__card {
-  display: flex;
   max-width: 984px;
-  max-height: 584px;
-  flex-direction: row;
-  position: relative;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
+  padding-bottom: 92px;
 }
 
-.places__card-contenttitle {
-  font-size: 72px;
-  font-weight: 900;
-  margin: 0;
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .places {
+    max-width: 720px;
+    width: 100%;
+  }
 }
 
-.places__card-contentimage {
-  margin: 48px 0 0 0;
-  padding: 0;
-  max-width: 460px;
-  max-height: 460px;
-}
-
-.places__card-contentsecond {
-  margin-left: 40px;
-  max-width: 484px;
-  font-size: 18px;
-}
-
-.places__card-contentsecond-description {
-  font-weight: 400;
-  line-height: 29.34px;
-  margin: 48px 0 0 0;
-}
-
-.places__card-two {
-  display: flex;
-  max-width: 984px;
-  max-height: 699px;
-  flex-direction: row;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-}
-
-.places__card-contentsecond-description--two {
-  margin: 0;
-  font-weight: 400;
-  line-height: 29.34px;
-}
-
-.places__card-contentsecond-cost {
-  margin: 0;
-}
-
-.places__card-contentsecond-url {
-  margin: 0;
-  font-size: 12px;
-  color: #aaaaaa;
-}
-
-.places__card-contentsecond-website {
-  margin: 4px 0 0 0;
-  font-size: 18px;
-  text-decoration: underline;
-  color: white;
-}
-
-.places__card-contentsecond-url--two {
-  margin: 106px 0 0 0;
-  font-size: 12px;
-  color: #aaaaaa;
-}
-
-.places__card-three {
-  display: flex;
-  max-width: 984px;
-  max-height: 584px;
-  flex-direction: row;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-}
-
-.places__card-contentsecond-url--three {
-  margin: 0;
-  font-size: 12px;
-  color: #aaaaaa;
-}
-
-.places__card-contentsecond-description--three {
-  margin-top: 26px;
-  font-weight: 400;
-  line-height: 29.34px;
-}
-
-.places__card-fourth {
-  display: flex;
-  max-width: 984px;
-  max-height: 730px;
-  flex-direction: row;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-}
-
-.places__card-contenttitle-fourth {
-  font-size: 72px;
-  font-weight: 900;
-  margin: 0;
-  line-height: 76px;
-}
-
-.places__card-contentsecond-url--fourth {
-  margin: 70px 0 0 0;
-  font-size: 12px;
-  color: #aaaaaa;
-}
-
-.places__card-contentsecond-cost--fourth {
-  margin-top: 19px;
-}
-
-.places__card-contentsecond-website--fourth {
-  margin: 12px 0 0 0;
-  font-size: 18px;
-  text-decoration: underline;
+@media screen and (max-width: 767px) {
+  .places {
+    max-width: 320px;
+    width: 100%;
+    padding-bottom: 64px;
+  }
 }

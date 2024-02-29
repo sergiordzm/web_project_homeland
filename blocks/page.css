@@ -1,9 +1,25 @@
 .page {
-  background-color: #2a2c2f;
-  margin: auto;
-  font-family: "Inter";
+  background: #2a2c2f;
   color: white;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: Inter, Arial, sans-serif;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .page {
+    width: 100%;
+    min-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page {
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+  }
 }
