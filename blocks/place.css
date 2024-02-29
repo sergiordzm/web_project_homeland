@@ -1,0 +1,160 @@
+.place {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title website"
+    ". paragraph"
+    "button paragraph"
+    ". paragraph";
+  column-gap: 40px;
+  row-gap: 48px;
+  margin-bottom: 80px;
+}
+
+.place:last-of-type {
+  margin-bottom: 0;
+}
+
+.place__title {
+  grid-area: title;
+
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: auto;
+}
+
+.place__title_large {
+  width: 584px;
+}
+
+.place__website {
+  grid-area: website;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.place__url-heading {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+  text-align: left;
+}
+
+.place__artist {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+
+.place__image {
+  width: 100%;
+}
+
+.place__paragraphs {
+  grid-area: paragraph;
+}
+
+.place__paragraph {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0 0 25px 0;
+  grid-column: 2/4;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .place {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title website"
+      ". paragraph"
+      "button paragraph"
+      ". paragraph";
+    column-gap: 28px;
+    row-gap: 46px;
+    margin-bottom: 30px;
+  }
+
+  .place__title {
+    grid-area: title;
+
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .place__title_large {
+    font-size: 42px;
+    width: 340px;
+  }
+
+  .place__website {
+    grid-area: website;
+  }
+
+  .place__paragraphs {
+    grid-area: paragraph;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .place {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    row-gap: 0;
+    justify-content: center;
+  }
+
+  .place__title {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 288px;
+  }
+
+  .place__website {
+    width: 288px;
+    margin: auto;
+  }
+
+  .place__title_large {
+    width: 288px;
+  }
+
+  .place__image {
+    height: 100%;
+    margin: 30px 0 10px 0;
+  }
+
+  .place__paragraphs {
+    width: 288px;
+    margin: auto;
+  }
+}
