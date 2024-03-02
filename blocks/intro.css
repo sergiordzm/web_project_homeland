@@ -19,7 +19,6 @@
 
 .intro__title {
   grid-area: title;
-
   font-size: 54px;
   font-weight: 900;
   line-height: 1.2;
@@ -75,6 +74,32 @@
 }
 
 @media screen and (max-width: 767px) {
+  .intro {
+    max-width: 288px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro__content {
+    display: block;
+  }
+
+  .intro__title {
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 9px;
+  }
+
+  .intro__text-information {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
   .intro {
     max-width: 288px;
     width: 100%;
